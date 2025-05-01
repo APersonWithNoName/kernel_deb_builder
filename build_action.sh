@@ -2,6 +2,9 @@
 
 VERSION=6.1.114
 
+# add deb-src to sources.list
+sed -i "/deb-src/s/# //g" /etc/apt/sources.list
+
 # change dir to workplace
 cd "${GITHUB_WORKSPACE}" || exit
 
