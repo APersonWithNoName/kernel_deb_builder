@@ -9,7 +9,7 @@ VERSION=6.1.114
 cd "${GITHUB_WORKSPACE}" || exit
 
 # download kernel source
-https://mirrors.edge.kernel.org/pub/linux/kernel/v6.x/linux-${VERSION}.tar.gz
+wget https://mirrors.edge.kernel.org/pub/linux/kernel/v6.x/linux-${VERSION}.tar.gz
 tar -xvf linux-${VERSION}.tar.gz
 rm -rf linux-${VERSION}.tar.gz
 cd linux-${VERSION} || exit
