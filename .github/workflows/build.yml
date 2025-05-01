@@ -12,7 +12,7 @@ jobs:
 
       - name: Install
         run: |
-          bash deps.sh
+          bash dep.sh
       - name: Build
         run: |
           bash build_action.sh
