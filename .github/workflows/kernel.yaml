@@ -12,10 +12,10 @@ jobs:
 
       - name: Install
         run: |
-          bash dep.sh
+          bash build_scripts/dep.sh
       - name: Build
         run: |
-          bash build_action.sh
+          bash build_scripts/kernel.sh
 
       - name: Artifact
         uses: actions/upload-artifact@v4
